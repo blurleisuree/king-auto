@@ -192,6 +192,7 @@ p {
         font-size: 3em !important;
         padding: 0 15px;
     }
+
     .header-main {
         padding: 100px 0 !important;
     }
@@ -276,17 +277,21 @@ p {
         font-size: 2.5em !important;
     }
 }
+
 @media screen and (max-width: 375px) {
     .header-main__block {
         /* padding: 35px 0 !important; */
         box-sizing: border-box !important;
     }
+
     .header__text {
         font-size: 1.5em !important;
     }
+
     .header-main__block-inner {
         min-height: 0px !important;
     }
+
     .header-main {
         padding: 75px 0 40px !important;
     }
@@ -474,6 +479,7 @@ p {
     .stages-main__text {
         padding-bottom: 20px !important;
     }
+
     .stages__text_add {
         display: none;
     }
@@ -483,9 +489,11 @@ p {
     .stages {
         padding: 30px 0 70px !important;
     }
+
     .stages__text {
         font-size: 1.5em;
     }
+
     h1 {
         font-size: 2.5em !important;
     }
@@ -845,6 +853,13 @@ input[type="number"] {
     .form__btn {
         margin-top: 50px !important;
     }
+    .form__input {
+        padding: 30px 20px !important;
+        max-width: 100% !important;
+    }
+    .form__left {
+        max-width: 100%;
+    }
 }
 
 
@@ -893,6 +908,37 @@ body.active {
 .message__button {
     font-size: 30px;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .message__inner {
+        width: 90%;
+        height: 40%;
+        padding: 25px;
+    }
+    .message__text {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .message__button {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 425px) {
+    .message__inner {
+        width: 90%;
+        height: 40%;
+        padding: 25px;
+        border-radius: 40px;
+    }
+    .message__text {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .message__button {
+        font-size: 1.5em;
+        width: 50% !important;
+    }
 }
 
 /* map---------------------------------------------------------------- */

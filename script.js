@@ -46,12 +46,12 @@ async function initMap() {
         openMessage();
 
         // Отправка формы через EmailJS
-        emailjs.sendForm('service_r35i1zp', 'template_c9ye3xd', this)
-            .then(function () {
-                alert('Сообщение успешно отправлено!');
-            }, function (error) {
-                alert('Ошибка отправки: ' + JSON.stringify(error));
-            });
+        // emailjs.sendForm('service_r35i1zp', 'template_c9ye3xd', this)
+        //     .then(function () {
+        //         console.log('Сообщение успешно отправлено!');
+        //     }, function (error) {
+        //         console.log('Ошибка отправки: ' + JSON.stringify(error));
+        //     });
     });
 
     const message = document.getElementById('message')
