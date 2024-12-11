@@ -14,11 +14,11 @@
 
 <body>
     <div class="message" id="message">
-            <div class="message__inner">
-                <h1 class="message__text">Заявка оставлена!</h1>
-                <div class="button message__button" id="message__button">Закрыть</div>
-            </div>
+        <div class="message__inner">
+            <h1 class="message__text">Заявка оставлена!</h1>
+            <div class="button message__button" id="message__button">Закрыть</div>
         </div>
+    </div>
     </div>
     <header class="header">
         <div class="header-top">
@@ -29,49 +29,59 @@
             <p id="header__num" class="header-top__text">+7 (921) 978 39-76</p>
         </div>
         <div class="container header-main">
-            <div class="row">
-                <div class="col s12 header-main__block header-main__block_title">
-                    <h1 class="header__title">
-                        Антикор обработка авто в Кингисеппе
-                    </h1>
+            <div class="row header__wrapper">
+                <div class="col xl12 header-main__title-wrapper">
+                    <div class="header-main__block header-main__block_title">
+                        <h1 class="header__title">
+                            Антикор обработка авто в Кингисеппе
+                        </h1>
+                    </div>
                 </div>
-                <div class="col header-main__block xl6">
-                    <p class="header__text">Сварочные работы, очистка дисков, ВИН номера и другое</p>
-                    <a href=#extra class="button header__btn">Подробнее</a>
+                <div class="col xl6 header-main__block-inner">
+                    <div class="header-main__block">
+                        <p class="header__text">Сварочные работы, очистка дисков, ВИН номера и другое</p>
+                        <a href=#extra class="button header__btn">Подробнее</a>
+                    </div>
                 </div>
-                <div class="col header-main__block header-main__block_right xl6">
-                    <p class="header__text">Заполните простую форму чтобы мы могли с вами связаться</p>
-                    <a href=#form class="button header__btn">Записаться</a>
+                <div class="col xl6 header-main__block-inner">
+                    <div class="header-main__block">
+                        <p class="header__text">Заполните простую форму чтобы мы могли с вами связаться</p>
+                        <a href=#form class="button header__btn">Записаться</a>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </header>
     <section class="main">
         <div class="container stages">
             <div class="row stages-main">
-                <div class="col s10 offset-s1">
+                <div class="col xl10 offset-xl1 stages__title-wrapper">
                     <h1 class="stages__title">Этапы антикора</h1>
                 </div>
-                <div class="col s5 stages__item offset-s1">
-                    <img src="/public/imgs/stages1.svg" alt="stages-circle" class="stages__circle">
-                    <p class="stages__text">Пескоструйная обработка и лазерная очистка кузова от коррозии</p>
+                <div class="stages__items row xl12 col">
+                    <div class="col l12 xl6 stages__item">
+                        <img src="/public/imgs/stages1.svg" alt="stages-circle" class="stages__circle">
+                        <p class="stages__text">Пескоструйная обработка и лазерная очистка кузова от коррозии</p>
+                    </div>
+                    <div class="col l12 xl6 stages__item">
+                        <p class="stages__text stages__text_right">Нанесение эпоксидного грунта, эпоксидной смолы
+                        </p>
+                        <img src="/public/imgs/stages2.svg" alt="stages-circle" class="stages__circle">
+                    </div>
+                    <div class="col l12 xl6 stages__item">
+                        <img src="/public/imgs/stages3.svg" alt="stages-circle" class="stages__circle">
+                        <p class="stages__text">Укрытие кузова полимерными битумными материалами; ниши колесных арок
+                            антигравием</p>
+                    </div>
+                    <div class="col l12 xl6 stages__item ">
+                        <p class="stages__text stages__text_right">Обработка скрытых полостей через дренажные
+                            отверстия
+                            консервантом</p>
+                        <img src="/public/imgs/stages4.svg" alt="stages-circle" class="stages__circle">
+                    </div>
                 </div>
-                <div class="col s5 stages__item">
-                    <p class="stages__text stages__text_right">Нанесение эпоксидного грунта, эпоксидной смолы</p>
-                    <img src="/public/imgs/stages2.svg" alt="stages-circle" class="stages__circle">
-                </div>
-                <div class="col s5 stages__item offset-s1">
-                    <img src="/public/imgs/stages3.svg" alt="stages-circle" class="stages__circle">
-                    <p class="stages__text">Укрытие кузова полимерными битумными материалами; ниши колесных арок
-                        антигравием</p>
-                </div>
-                <div class="col s5 stages__item ">
-                    <p class="stages__text stages__text_right">Обработка скрытых полостей через дренажные отверстия
-                        консервантом</p>
-                    <img src="/public/imgs/stages4.svg" alt="stages-circle" class="stages__circle">
-
-                </div>
-                <div class="col s5 stages-main__bottom offset-s1">
+                <div class="col l10 offset-l1 xl6 stages-main__bottom offset-xl6 offset-s0 s12">
                     <img src="/public/imgs/stages-star.svg" alt="stages__star" class="stages__star">
                     <p class="stages-main__text">Стоимость и объем работ обговаривается с заказчиком индивидуально после
                         осмотра</p>
@@ -87,33 +97,33 @@
         </div>
         <div class="container extra">
             <div class="row extra__items">
-                <div class="col s3 extra-item__wrapper">
-                    <div class="col s12 extra__item">
-                        <p class="col s4 col extra__num">01</p>
-                        <p class="col s12 extra__text">Cварочные работы, зачистка порогов, реконструкция крыльев и т.д.
+                <div class="col xl6 extra-item__wrapper">
+                    <div class="col xl12 extra__item">
+                        <p class="col xl6 col extra__num">01</p>
+                        <p class="col xl10 extra__text">Cварочные работы, зачистка порогов, реконструкция крыльев и т.д.
                         </p>
                     </div>
                 </div>
-                <div class="col s3 extra-item__wrapper">
+                <div class="col xl6 extra-item__wrapper">
                     <div class="col extra__item">
-                        <p class="col s4 extra__num">02</p>
-                        <div class="extra__star-wrapper col s4 offset-s4 ">
+                        <p class="col xl6 extra__num s6">02</p>
+                        <div class="extra__star-wrapper col xl4 offset-xl2 s1 offset-s5">
                             <img src="/public/imgs/stages-star.svg" class="extra__star"></img>
                         </div>
-                        <p class="col s12 extra__text">Очистка ВИН номера автомобилей лазером </p>
-                        <p class="col s12 extra__text extra__text_price">Стоимость от 5.000 до 10.000</p>
+                        <p class="col xl12 extra__text">Очистка ВИН номера автомобилей лазером </p>
+                        <p class="col xl12 extra__text extra__text_price">Стоимость от 5.000 до 10.000</p>
                     </div>
                 </div>
-                <div class="col s3 extra-item__wrapper">
+                <div class="col xl6 extra-item__wrapper">
                     <div class="col extra__item">
-                        <p class="col s4 extra__num">03</p>
-                        <p class="col s12 extra__text">Очистка дисков автомобилей для последующей окраски</p>
+                        <p class="col xl6 extra__num">03</p>
+                        <p class="col xl10 extra__text">Очистка дисков автомобилей для последующей окраски</p>
                     </div>
                 </div>
-                <div class="col s3 extra-item__wrapper">
+                <div class="col xl6 extra-item__wrapper">
                     <div class="col extra__item">
-                        <p class="col s4 extra__num">04</p>
-                        <p class="col s12 extra__text">Сварка алюминия нержавеющей стали до 4 мм (глушителей, банка и
+                        <p class="col xl6 extra__num">04</p>
+                        <p class="col xl10 extra__text">Сварка алюминия нержавеющей стали до 4 мм (глушителей, банка и
                             т.д.)
                         </p>
                     </div>
@@ -129,19 +139,21 @@
         </div>
         <div class="container form">
             <div class="row form__wrapper">
-                <h1 class="col s4 offset-s1 form__title">Онлайн-запись </h1>
-                <div class="col s8"></div>
-                <p class="col s4 offset-s1 form__subtitle">Заполните простую форму чтобы мы могли с вами связаться</p>
-                <form id="form" class="form__inner offset-s1 col s10">
-                    <div class="form__left col s4">
+                <h1 class="col xl6 l12 form__title">Онлайн-запись</h1>
+                <div class="col xl12"></div>
+                <p class="col xl7 l10 form__subtitle">Заполните простую форму чтобы мы могли с вами связаться</p>
+                <form id="form" class="form__inner col xl12">
+                    <div class="form__left col xl6 l12">
                         <input required type="text" name="name" class="form__input" placeholder="Ваше имя">
                         <input required type="number" name="number" class="form__input" placeholder="Номер телефона">
                     </div>
-                    <textarea name="info" id="info" class="form__textarea col s4 offset-s4"
-                        placeholder="Доп. информация"></textarea>
-                    <button type="submit" class="btn form__btn col s2 ">Записаться</button>
+                    <div class="form__textarea-wrapper col offset-xl1 xl5 offset-s0 s12">
+                        <textarea name="info" id="info" class="form__textarea "
+                            placeholder="Доп. информация"></textarea>
+                    </div>
+                    <button type="submit" class="btn form__btn col xl2 ">Записаться</button>
                 </form>
-                <a href=#header__num class="col offset-s8 s4 form__call-block">
+                <a href=#header__num class="col offset-xl8 xl4 form__call-block offset-s0 s12">
                     <p class="form__call-text">Или можете позвонить лично</p>
                     <img src="/public/imgs/form-arrow.svg" alt="form-arrow" class="form__call-arrow">
                 </a>
@@ -165,7 +177,7 @@
     </footer>
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="script.js"></script>
 </body>
