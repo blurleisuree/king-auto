@@ -265,7 +265,6 @@ p {
 
 @media screen and (max-width: 375px) {
     .header-main__block {
-        /* padding: 35px 0 !important; */
         box-sizing: border-box !important;
     }
 
