@@ -1,6 +1,8 @@
 (async function () {
-    const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = ymaps3;
-    const map = new YMap(
+    await ymaps3.ready;
+    const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } = ymaps3;
+
+    const map = new ymaps3.YMap(
         document.getElementById('map'),
         {
             location: {
