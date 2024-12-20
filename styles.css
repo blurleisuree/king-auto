@@ -653,6 +653,7 @@ p {
 
 .form__left {
     margin-bottom: 50px;
+    min-height: 220.5px !important;
 }
 
 .form__textarea {
@@ -668,6 +669,7 @@ p {
     box-sizing: border-box !important;
     box-shadow: 2px 6px 4px 0 rgba(0, 0, 0, 0.25) !important;
     min-height: 214px !important;
+    margin-bottom: 50px;
 }
 
 .form__textarea::placeholder {
@@ -726,7 +728,7 @@ input[type="number"] {
     font-family: "Gothampro" !important;
     text-transform: none !important;
     letter-spacing: 0 !important;
-    margin-top: 80px !important;
+    margin-top: 30px !important;
     transition: 0.25s ease-out !important;
 }
 
@@ -783,6 +785,7 @@ input[type="number"] {
     .form__btn {
         min-height: 75px !important;
         font-size: 1.5em !important;
+        margin-top: 10px !important;
     }
 
     .button {
@@ -804,6 +807,10 @@ input[type="number"] {
         padding: 30px 40px !important;
     }
 
+    .form__input:first-child {
+        margin-bottom: 30px !important;
+    }
+
     .form__call-text {
         font-size: 1.3em;
     }
@@ -815,6 +822,7 @@ input[type="number"] {
     .form__left,
     .form__textarea-wrapper {
         padding: 0 !important;
+        min-height: auto !important;
     }
 
     .form {
@@ -824,7 +832,7 @@ input[type="number"] {
 
 @media screen and (max-width: 375px) {
     .form__btn {
-        margin-top: 50px !important;
+        margin-top: 0px !important;
     }
 
     .form__input {

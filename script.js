@@ -6,7 +6,7 @@
         document.getElementById('map'),
         {
             location: {
-                center: [28.596606, 59.365661],
+                center: [28.633342, 59.358163],
                 zoom: 14,
                 mode: 'vector'
             }
@@ -6976,9 +6976,9 @@
     const { YMapDefaultMarker } = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
     map.addChild(
         new YMapDefaultMarker({
-            coordinates: [28.596606, 59.365661],
+            coordinates: [28.633342, 59.358163],
             title: 'Наш адрес',
-            subtitle: 'ул. Пушкина д. 26',
+            subtitle: 'ул. Дорожников, 38',
             color: "orange"
         })
     );
