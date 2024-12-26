@@ -6984,19 +6984,19 @@
     );
 })();
 
-emailjs.init("Ne9DUhSlhsSeh3FS-");
+emailjs.init("9mluphvpJhv4P8sq2");
 document.getElementById('form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Отключаем стандартное поведение формы
-    form.reset();
-    openMessage();
-
-    // Отправка формы через EmailJS
-    emailjs.sendForm('service_r35i1zp', 'template_c9ye3xd', this)
+    event.preventDefault();
+    emailjs.sendForm('service_oeofp6g', 'template_3jdc1zw', this)
         .then(function () {
             console.log('Сообщение успешно отправлено!');
         }, function (error) {
             console.log('Ошибка отправки: ' + JSON.stringify(error));
-        });
+        }
+        );
+
+    form.reset();
+    openMessage();
 });
 
 const message = document.getElementById('message')
